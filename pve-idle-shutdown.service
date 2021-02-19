@@ -1,0 +1,10 @@
+[Unit]
+Description=Shutdowns the system if no VM is running for 15min
+After=pve-guests.service
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -u /usr/local/bin/pve_idle_shutdown.py
