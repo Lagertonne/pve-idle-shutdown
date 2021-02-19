@@ -1,6 +1,6 @@
 # pve-idle-shutdown
 ## Description
-Shutdown Host if no VM is running
+Shutdown a Proxmox Host if no VM is running
 
 ## Installation
 ```
